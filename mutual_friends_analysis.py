@@ -16,11 +16,10 @@ import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt
 
-friends_html = 'C:\\Users\\shawn\\Desktop\\Programming\\Facebook\\db\\index.html'
 usr=input('Enter Email Id:') #enter email
 pwd=input('Enter Password:') #enter password
 
-driver = webdriver.Chrome("C:\\Users\\shawn\\Desktop\\Programming\\Facebook\\chromedriver.exe") #change this path to appropriate chrome driver directory
+driver = webdriver.Chrome("(input your own chrome driver directory)") #change this path to appropriate chrome driver directory
 driver.get("http://facebook.com")
 
 username_box = driver.find_element_by_id('email')
