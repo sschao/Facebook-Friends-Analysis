@@ -95,7 +95,7 @@ for index, row in df_friends_decr.iterrows(): #create percentile column
     except KeyError: #people who deleted their FB
         pass
 
-df_friends_decr.to_csv("C:\\Users\\shawn\\Desktop\\Programming\\Facebook\\Facebook Friends, Mutual Friends, Link.csv", index = False) #change this
+df_friends_decr.to_csv("(Input your own file directory)", index = False) #change this
 plt.figure()
 plt.plot(df_friends_decr["Percentile"], df_friends_decr["Number of Mutual Friends"])
 plt.title("Number of Facebook Friends vs Percentile")
