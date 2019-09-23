@@ -10,7 +10,7 @@ Finds the number of mutual friends that you have with each of your Facebook frie
 
 ### Required Packages
 Open Command Prompt and run the following command
-'''
+```
 pip install selenium bs4 pandas scipy numpy datetime
-'''
+```
 
