@@ -9,7 +9,7 @@ Download the appropriate *.py* files. Download the Chrome driver that is the cor
 Finds the number of mutual friends that you have with each of your Facebook friends, exports it to a csv file along with the percentile, and also creates a graph plotting the number of mutual friends vs percentile
 
 ### Required Packages
-Open Command Prompt and run the following command
+Open Command Prompt and run the following command to install all of the required packages for **mutual_friends_analysis.py**.
 ```
 pip install selenium bs4 pandas scipy numpy datetime
 ```
