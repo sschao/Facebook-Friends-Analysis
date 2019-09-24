@@ -105,6 +105,12 @@ plt.title("Number of Facebook Friends vs Percentile")
 plt.xlabel("Percentile")
 plt.ylabel("Number of Facebook Friends")
 
+plt.figure()
+plt.hist(df_friends_decr["Number of Mutual Friends"], bins=30)
+plt.title("Histogram for Number of Mutual Friends")
+plt.xlabel("Number of Mutual Friends")
+plt.ylabel("Frequency")
+
 def find_friend_info(df, friend_name): #useful for finding specific friend info. If multiple people with the same name returns both
     df_friend= df[df["Friend Name"].str.contains(friend_name)] 
     return df_friend
