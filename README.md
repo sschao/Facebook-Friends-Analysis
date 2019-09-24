@@ -6,7 +6,7 @@ Tool to analyze Facebook Friends. Using this tool could result in Facebook banni
 Download the appropriate *.py* files. Download the Chrome driver that is the corresponding version as your Chrome browser. Link: https://chromedriver.chromium.org/
 
 ## mutual_friends_analysis.py
-Finds the number of mutual friends that you have with each of your Facebook friends, exports it to a csv file along with the percentile, and also creates a graph plotting the number of mutual friends vs percentile
+Finds the number of mutual friends that you have with each of your Facebook friends, exports it to a csv file along with the percentile, and also creates a graph plotting the number of mutual friends vs percentile and a histogram for frequency vs the number of mutual friends
 
 ### Required Packages
 Open Command Prompt and run the following command to install all of the required packages for **mutual_friends_analysis.py**.
