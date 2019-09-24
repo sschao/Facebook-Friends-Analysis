@@ -3,7 +3,7 @@ Tool to analyze Facebook Friends. Using this tool could result in Facebook banni
 
 ## Setup
 
-Download the appropriate *.py* files
+Download the appropriate *.py* files. Download the Chrome driver that is the corresponding version as your Chrome browser.
 
 ## mutual_friends_analysis.py
 Finds the number of mutual friends that you have with each of your Facebook friends, exports it to a csv file along with the percentile, and also creates a graph plotting the number of mutual friends vs percentile
@@ -13,4 +13,14 @@ Open Command Prompt and run the following command
 ```
 pip install selenium bs4 pandas scipy numpy datetime
 ```
+### Changes to Make
+Change to the appropriate directory path for your Chrome driver (include the chromedriver.exe) in the specified place (noted in the code). For example, 
+```
+driver = webdriver.Chrome("C:\\Users\\sschao\\Desktop\\Scripts\\Facebook\\chromedriver.exe") 
+```
+You can also put the chrome driver in the same folder/directory as your **mutual_friends_analysis.py** file. 
 
+Also, change to the correct path for your output csv. For example, 
+```
+df_friends_decr.to_csv("C:\\Users\\sschao\\Scripts\\Programming\\Facebook\\Facebook Friends, Mutual Friends, Link.csv", index = False)
+```
