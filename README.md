@@ -22,5 +22,5 @@ You can also put the chrome driver in the same folder/directory as your **mutual
 
 Also, change to the correct path for your output csv. For example, 
 ```
-df_friends_decr.to_csv("C:\\Users\\sschao\\Scripts\\Programming\\Facebook\\Facebook Friends, Mutual Friends, Link.csv", index = False)
+df_friends_decr.to_csv("C:\\Users\\sschao\\Desktop\\Scripts\\Programming\\Facebook\\Facebook Friends, Mutual Friends, Link.csv", index = False)
 ```
