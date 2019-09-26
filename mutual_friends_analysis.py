@@ -31,6 +31,7 @@ password_box.send_keys(pwd)
 
 login_box = driver.find_element_by_id('loginbutton')
 login_box.click()
+
 def click_random_spot():
     actions = ActionChains(driver)
     actions.move_to_element_with_offset(driver.find_element_by_tag_name('body'), 0,0)
@@ -44,6 +45,7 @@ def download_friends():
     while driver.find_elements_by_css_selector('#m_more_friends'):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(5)
+        
 def get_soup(driver):
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
@@ -67,7 +69,9 @@ for i in range(len(mutual_friends)):
             num_mutual_friends = int(mutual_friends[i].text[:-14]) #singular when I only have "1 mutual friend"
         except ValueError:
             continue
+            
     friend_name =  friend_names[i].find("a").text
+    
     if friend_name in mutual_friend_dict.keys():
         dup_count = 0
         while friend_name in mutual_friend_dict.keys(): #handles the duplicate error attaching an underscore and a label number to the name
@@ -99,6 +103,7 @@ for index, row in df_friends_decr.iterrows(): #create percentile column
         pass
 
 df_friends_decr.to_csv("C:\\Users\\shawn\\Desktop\\Programming\\Facebook\\Facebook Friends, Mutual Friends, Link.csv", index = False) #change this
+
 plt.figure()
 plt.plot(df_friends_decr["Percentile"], df_friends_decr["Number of Mutual Friends"])
 plt.title("Number of Facebook Friends vs Percentile")
