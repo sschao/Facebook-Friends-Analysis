@@ -1,7 +1,7 @@
 # Facebook-Friends-Analysis
 Tool to analyze Facebook Friends. Using this tool could result in Facebook banning you, so use at your own discretion. Developer not liable for Facebook ban.
 
-**Disclaimer/Note**: The purpose/intention of this tool is not to invade other people's privacy but to give people a way to see and visualize who the user has the most friends in common with, which is completely public information and easily attainable. Please respect other people's privacy. The data should be only used for personal purposes. 
+**Disclaimer/Note**: The purpose/intention of this tool is not to invade other people's privacy but to give people a way to see and visualize who the user has the most friends in common with, which is completely public information and easily attainable. Please respect other people's privacy. The data should be only used for personal ethical purposes. 
 
 ## Setup
 
